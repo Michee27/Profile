@@ -107,6 +107,7 @@ body {
 
 .aprensetacao-imagem {
     width: 40%;
+    height: 40%;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--primary-color)
