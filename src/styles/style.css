@@ -140,3 +140,48 @@ body {
         width: auto;
     }
 }
+
+@media (max-width: 600px) {
+    .cabecalho {
+        margin: 2px;
+    }
+
+    .cabecalho-menu {
+        width: auto;
+        margin: 2px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cabecalho {
+        padding: 2% 2% 0;
+    }
+
+    .cabecalho-menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.4rem;
+        justify-content: center;
+    }
+
+    .cabecalho-menu-link {
+        font-size: 1rem;
+    }
+
+    .aprensetacao-imagem {
+        margin-top: 1.5rem;
+        width: 70%;
+        height: 70%;
+    }
+
+    .aprensentacao-links {
+        gap: 1rem;
+    }
+
+    .aprensentacao-links-navegacao {
+        gap: 0.8rem;
+        width: 80%;
+        padding: 1rem 0;
+
+    }
+}
