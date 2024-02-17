@@ -27,19 +27,30 @@ body {
 
 .cabecalho-menu {
     display: flex;
-    gap: 80px;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: 15%;
+
 }
 
 .cabecalho-menu-link {
     font-family: var(--font-segundaria);
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--cor-terciaria);
     text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.cabecalho-menu-link:hover {
+    background-color: var(--cor-hover);
 }
 
 .apresentacao {
-    padding: 5% 5%;
+    padding: 5% 10% 5% 10%;
+    max-width: 80rem;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -101,16 +112,80 @@ body {
     font-family: var(--font-segundaria);
 }
 
-.aprensentacao-links-link:hover {
+.aprensentacao-links-navegacao:hover {
     background-color: var(--cor-hover);
 }
 
 .aprensetacao-imagem {
-    width: 40%;
-    height: 40%;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--primary-color)
+}
+
+.aprensetacao-imagem-about {
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+    border: 2px solid var(--primary-color)
+}
+
+.conteudo-habilidades {
+    padding: 5%;
+    max-width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+.skills-titulo {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2.25rem;
+    font-family: var(--font-primaria);
+}
+
+.skills-conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 25rem;
+    height: 10.62rem;
+    padding: 0.5rem 1rem;
+    border: 0.5px;
+    border-radius: 10px;
+    background-color: rgb(10, 10, 10);
+    padding: 1.5rem 0rem;
+}
+
+.skills-conteudo:hover {
+    background-color: var(--cor-hover);
+}
+
+.skills-titulo-link {
+    text-align: center;
+    gap: 10px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 5px;
+    text-decoration: none;
+    color: #f6f6f6;
+    font-family: var(--font-segundaria);
 }
 
 .rodape {
@@ -123,7 +198,7 @@ body {
     font-weight: 400;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .cabecalho {
         padding: 10%;
     }
@@ -142,6 +217,12 @@ body {
     }
 }
 
+@media (max-width: 915px) {
+    .skills-conteudo {
+        width: 40rem;
+    }
+}
+
 @media (max-width: 600px) {
     .cabecalho {
         margin: 2px;
@@ -150,6 +231,10 @@ body {
     .cabecalho-menu {
         width: auto;
         margin: 2px;
+    }
+
+    .skills-conteudo {
+        width: 25rem;
     }
 }
 
@@ -161,8 +246,9 @@ body {
     .cabecalho-menu {
         display: flex;
         flex-wrap: wrap;
-        gap: 1.4rem;
+        gap: 0rem;
         justify-content: center;
+        padding-right: 0rem;
     }
 
     .cabecalho-menu-link {
@@ -171,8 +257,15 @@ body {
 
     .aprensetacao-imagem {
         margin-top: 1.5rem;
-        width: 70%;
-        height: 70%;
+        width: 300px;
+        height: 300px;
+    }
+
+    .aprensetacao-imagem-about {
+        margin-top: 1.5rem;
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
     }
 
     .aprensentacao-links {
