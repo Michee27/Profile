@@ -163,7 +163,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 25rem;
+    width: 23rem;
     height: 10.62rem;
     padding: 0.5rem 1rem;
     border: 0.5px;
@@ -194,7 +194,7 @@ body {
     background-color: var(--cor-terciaria);
     text-align: center;
     font-family: var(--font-segundaria);
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 
@@ -225,27 +225,15 @@ body {
 
 @media (max-width: 600px) {
     .cabecalho {
-        margin: 2px;
-    }
-
-    .cabecalho-menu {
-        width: auto;
-        margin: 2px;
-    }
-
-    .skills-conteudo {
-        width: 25rem;
-    }
-}
-
-@media (max-width: 600px) {
-    .cabecalho {
         padding: 2% 2% 0;
+        margin: 2px;
     }
 
     .cabecalho-menu {
         display: flex;
         flex-wrap: wrap;
+        width: auto;
+        margin: 2px;
         gap: 0rem;
         justify-content: center;
         padding-right: 0rem;
@@ -276,6 +264,10 @@ body {
         gap: 0.8rem;
         width: 80%;
         padding: 1rem 0;
+    }
 
+    .skills-conteudo {
+        width: 18rem;
+        background-color: rgb(31, 31, 31);
     }
 }
