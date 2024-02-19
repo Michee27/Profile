@@ -48,7 +48,7 @@ body {
 }
 
 .apresentacao {
-    padding: 5% 10% 5% 10%;
+    padding: 5% 10% 1% 10%;
     max-width: 80rem;
     margin: 0 auto;
     display: flex;
@@ -131,8 +131,8 @@ body {
     border: 2px solid var(--primary-color)
 }
 
-.conteudo-habilidades {
-    padding: 5%;
+.conteudo {
+    padding: 1% 5%;
     max-width: 80rem;
     margin: 0 auto;
     display: flex;
@@ -150,14 +150,15 @@ body {
     padding: 0rem 0rem 1rem 0rem;
 }
 
-.skills-titulo {
+.titulo {
     text-align: center;
     padding-top: 1rem;
     font-size: 2.25rem;
     font-family: var(--font-primaria);
+    color: var(--cor-terciaria);
 }
 
-.skills-conteudo {
+.conteudo-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -172,7 +173,7 @@ body {
     padding: 1.5rem 0rem;
 }
 
-.skills-conteudo:hover {
+.conteudo-box:hover {
     background-color: var(--cor-hover);
 }
 
@@ -186,6 +187,63 @@ body {
     text-decoration: none;
     color: #f6f6f6;
     font-family: var(--font-segundaria);
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    text-align: left;
+    padding: 1rem;
+}
+
+.conteudo-box-projeto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 32rem;
+    height: 16.62rem;
+    padding: 0.5rem 1rem;
+    border: 0.5px;
+    border-radius: 10px;
+    background-color: rgb(10, 10, 10);
+    padding: 1.5rem 1rem;
+}
+
+.project-details {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.project-details-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.project-title {
+    font-size: 1.4rem;
+    font-family: var(--font-primaria);
+    color: var(--cor-terciaria);
+}
+
+.project-details-description p {
+    font-size: 1.2rem;
+    font-family: var(--font-segundaria);
+}
+
+.project-details img {
+    width: 200px;
+    height: 270px;
+    border-radius: 15px;
 }
 
 .rodape {
@@ -218,7 +276,11 @@ body {
 }
 
 @media (max-width: 915px) {
-    .skills-conteudo {
+    .conteudo-box {
+        width: 40rem;
+    }
+
+    .conteudo-box-projeto {
         width: 40rem;
     }
 }
@@ -266,8 +328,17 @@ body {
         padding: 1rem 0;
     }
 
-    .skills-conteudo {
-        width: 18rem;
+    .conteudo-box {
+        width: 20rem;
         background-color: rgb(31, 31, 31);
+    }
+
+    .conteudo-box-projeto {
+        width: 20rem;
+        background-color: rgb(31, 31, 31);
+    }
+
+    .conteudo-box-projeto img {
+        display: none;
     }
 }
