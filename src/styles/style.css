@@ -125,10 +125,11 @@ body {
 }
 
 .aprensetacao-imagem-about {
-    width: 40%;
-    height: 40%;
+    width: 400px;
+    height: 900px;
     object-fit: cover;
-    border: 2px solid var(--primary-color)
+    border: 2px solid var(--primary-color);
+    border-bottom: 3px solid var(--cor-segundaria);
 }
 
 .conteudo {
@@ -293,18 +294,6 @@ body {
     font-weight: 400;
 }
 
-.teste {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 24px;
-    color: var(--cor-primaria);
-    background-color: var(--cor-terciaria);
-    text-align: center;
-    font-family: var(--font-segundaria);
-    font-size: 1.1rem;
-    font-weight: 400;
-}
 
 @media (max-width: 1300px) {
     .cabecalho {
@@ -365,7 +354,7 @@ body {
         margin-top: 1.5rem;
         width: 300px;
         height: 300px;
-        border-radius: 10px;
+        border-radius: 50%;
     }
 
     .aprensentacao-links {
