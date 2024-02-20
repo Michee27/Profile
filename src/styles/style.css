@@ -293,6 +293,19 @@ body {
     font-weight: 400;
 }
 
+.teste {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--font-segundaria);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
 @media (max-width: 1300px) {
     .cabecalho {
         padding: 10%;
