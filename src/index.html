@@ -10,16 +10,40 @@
 
 <body>
     <header class="cabecalho">
+        <div class="logo">
+            <a href="#">Michée.</a>
+        </div>
         <nav class="cabecalho-menu">
-            <a class="cabecalho-menu-link" href="index.html">Home</a>
-            <a class="cabecalho-menu-link" href="./about.html">About me</a>
-            <a class="cabecalho-menu-link"
-                href="https://github.com/Michee27?tab=repositories&q=&type=public&language=&sort=">My projects</a>
-            <a class="cabecalho-menu-link" href="./cv/CURRICULUM - MICHÉE CELESTIN.pdf">Download CV</a>
-            <a class="cabecalho-menu-link" href="https://wa.me/5547997768422">Contact me</a>
+            <div id="menu" class="menu">
+                <a class="cabecalho-menu-link" href="index.html">Home</a>
+                <a class="cabecalho-menu-link" href="./about.html">About me</a>
+                <a class="cabecalho-menu-link"
+                    href="https://github.com/Michee27?tab=repositories&q=&type=public&language=&sort=">My projects</a>
+                <a class="cabecalho-menu-link" href="./cv/CURRICULUM - MICHÉE CELESTIN.pdf">Download CV</a>
+            </div>
+            <div id="menu-toggle" class="menu-toggle">
+                <div class="barra"></div>
+                <div class="barra"></div>
+                <div class="barra"></div>
+            </div>
         </nav>
     </header>
+
     <main>
+        <section>
+            <div id="menu-overlay" class="menu-overlay">
+                <div id="menu-container" class="menu-container">
+                    <div id="menu-mobile" class="menu-mobile">
+                        <a class="cabecalho-menu-link" href="index.html">Home</a>
+                        <a class="cabecalho-menu-link" href="./about.html">About me</a>
+                        <a class="cabecalho-menu-link"
+                            href="https://github.com/Michee27?tab=repositories&q=&type=public&language=&sort=">My
+                            projects</a>
+                        <a class="cabecalho-menu-link" href="./cv/CURRICULUM - MICHÉE CELESTIN.pdf">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="apresentacao">
             <div class="apresentacao-conteudo">
                 <h1 class="apresentacao-conteudo-titulo">Hello!! <br> I'm
@@ -36,14 +60,18 @@
 
                 <div class="aprensentacao-links">
                     <h2 class="aprensentacao-links-subtitulo">Acesse minhas redes</h2>
-                    <a class="aprensentacao-links-navegacao" href="https://www.linkedin.com/in/micheecelestin/">
+                    <a class="aprensentacao-links-navegacao" href="https://www.linkedin.com/in/micheecelestin/"
+                        onclick="animateButtonClick(this)">
                         <img src="./assets/linkedin.png" alt="linkedin">
-                        Linkedin
+                        <span>Linkedin</span>
                     </a>
-                    <a class="aprensentacao-links-navegacao" href="https://github.com/Michee27">
+                    <a class="aprensentacao-links-navegacao" href="https://github.com/Michee27"
+                        onclick="animateButtonClick(this)">
                         <img src="./assets/github.png" alt="github">
-                        GitHub</a>
+                        <span>GitHub</span>
+                    </a>
                 </div>
+
             </div>
             <img class="aprensetacao-imagem" src="./img/micheeDev.png">
         </section>
@@ -54,12 +82,12 @@
                     Hard Skills
                 </h1>
                 <div class="conteudo-box">
-                    <p class="skills-titulo-link" href="#">JavaScript - Advanced Level</p>
-                    <p class="skills-titulo-link" href="#">Node.js - Advanced Level</p>
-                    <p class="skills-titulo-link" href="#">PosgresSQL - Advanced Level</p>
-                    <p class="skills-titulo-link" href="#">SQL - Advanced Level</p>
-                    <p class="skills-titulo-link" href="#">AWS - Advanced Level</p>
-                    <p class="skills-titulo-link" href="#">PHP - Intermediate Level</p>
+                    <p class="skills-titulo-link">JavaScript - Advanced Level</p>
+                    <p class="skills-titulo-link">Node.js - Advanced Level</p>
+                    <p class="skills-titulo-link">PosgresSQL - Advanced Level</p>
+                    <p class="skills-titulo-link">SQL - Advanced Level</p>
+                    <p class="skills-titulo-link">AWS - Advanced Level</p>
+                    <p class="skills-titulo-link">PHP - Intermediate Level</p>
                 </div>
             </div>
 
@@ -68,12 +96,12 @@
                     Soft Skills
                 </h1>
                 <div class="conteudo-box">
-                    <p class="skills-titulo-link" href="#">Communication</p>
-                    <p class="skills-titulo-link" href="#">Project Management</p>
-                    <p class="skills-titulo-link" href="#">Creativity</p>
-                    <p class="skills-titulo-link" href="#">Team Work</p>
-                    <p class="skills-titulo-link" href="#">Scrum Kanban</p>
-                    <p class="skills-titulo-link" href="#">Agile Methodology</p>
+                    <p class="skills-titulo-link">Communication</p>
+                    <p class="skills-titulo-link">Project Management</p>
+                    <p class="skills-titulo-link">Creativity</p>
+                    <p class="skills-titulo-link">Team Work</p>
+                    <p class="skills-titulo-link">Scrum Kanban</p>
+                    <p class="skills-titulo-link">Agile Methodology</p>
                 </div>
             </div>
 
@@ -82,9 +110,9 @@
                     Languages
                 </h1>
                 <div class="conteudo-box">
-                    <p class="skills-titulo-link" href="#">English - Advanced Level</p>
-                    <p class="skills-titulo-link" href="#">French - Native Level</p>
-                    <p class="skills-titulo-link" href="#">Portugues - Fluente level</p>
+                    <p class="skills-titulo-link">English - Advanced Level</p>
+                    <p class="skills-titulo-link">French - Native Level</p>
+                    <p class="skills-titulo-link">Portugues - Fluente level</p>
                 </div>
             </div>
         </section>
@@ -145,12 +173,16 @@
                 </div>
             </div>
         </section>
-
+        <div class="imagem-whatsapp">
+            <a href="https://wa.me/5547997768422"><img src="./img/whats.png" alt="Imagem Whatsapp"></a>
+        </div>
     </main>
 
     <footer class="rodape">
         <p>Developed by Michée Celestin</p>
     </footer>
+
+    <script src="./scripts/script.js"></script>
 
 </body>
 

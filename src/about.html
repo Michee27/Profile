@@ -10,17 +10,40 @@
 
 <body>
     <header class="cabecalho">
+        <div class="logo">
+            <a href="index.html">Michée.</a>
+        </div>
         <nav class="cabecalho-menu">
-            <a class="cabecalho-menu-link" href="index.html">Home</a>
-            <a class="cabecalho-menu-link" href="./about.html">About me</a>
-            <a class="cabecalho-menu-link"
-                href="https://github.com/Michee27?tab=repositories&q=&type=public&language=&sort=">My projects</a>
-            <a class="cabecalho-menu-link" href="./cv/CURRICULUM - MICHÉE CELESTIN.pdf">Download CV</a>
-            <a class="cabecalho-menu-link" href="https://wa.me/5547997768422">Contact me</a>
+            <div id="menu" class="menu">
+                <a class="cabecalho-menu-link" href="index.html">Home</a>
+                <a class="cabecalho-menu-link" href="./about.html">About me</a>
+                <a class="cabecalho-menu-link"
+                    href="https://github.com/Michee27?tab=repositories&q=&type=public&language=&sort=">My projects</a>
+                <a class="cabecalho-menu-link" href="./cv/CURRICULUM - MICHÉE CELESTIN.pdf">Download CV</a>
+            </div>
+            <div id="menu-toggle" class="menu-toggle">
+                <div class="barra"></div>
+                <div class="barra"></div>
+                <div class="barra"></div>
+            </div>
         </nav>
     </header>
 
     <main>
+        <section>
+            <div id="menu-overlay" class="menu-overlay">
+                <div id="menu-container" class="menu-container">
+                    <div id="menu-mobile" class="menu-mobile">
+                        <a class="cabecalho-menu-link" href="index.html">Home</a>
+                        <a class="cabecalho-menu-link" href="./about.html">About me</a>
+                        <a class="cabecalho-menu-link"
+                            href="https://github.com/Michee27?tab=repositories&q=&type=public&language=&sort=">My
+                            projects</a>
+                        <a class="cabecalho-menu-link" href="./cv/CURRICULUM - MICHÉE CELESTIN.pdf">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="apresentacao">
             <div class="apresentacao-conteudo">
                 <h1 class="titulo" id="animated-text">About me</h1>
@@ -53,6 +76,9 @@
     <footer class="rodape">
         <p>Developed by Michée Celestin</p>
     </footer>
+
+    <script src="./scripts/script.js"></script>
+
 
 </body>
 
