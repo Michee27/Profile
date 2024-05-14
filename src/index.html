@@ -13,172 +13,275 @@
         <div class="logo">
             <a href="#">Michée.</a>
         </div>
-        <nav class="cabecalho-menu">
+        <nav class="cabecalho__menu">
             <div id="menu" class="menu">
-                <a class="cabecalho-menu-link" href="index.html">Home</a>
-                <a class="cabecalho-menu-link" href="./about.html">About me</a>
-                <a class="cabecalho-menu-link"
+                <a class="cabecalho__menu__link" href="index.html">Home</a>
+                <a class="cabecalho__menu__link" href="#about-section">About
+                    me</a>
+                <a class="cabecalho__menu__link"
                     href="https://github.com/Michee27?tab=repositories&q=&type=public&language=&sort=">My projects</a>
-                <a class="cabecalho-menu-link" href="./cv/CURRICULUM - MICHÉE CELESTIN.pdf">Download CV</a>
-            </div>
-            <div id="menu-toggle" class="menu-toggle">
-                <div class="barra"></div>
-                <div class="barra"></div>
-                <div class="barra"></div>
+                <a class="cabecalho__menu__link" href="./cv/CURRICULUM - MICHÉE CELESTIN.pdf">Download CV</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <section>
-            <div id="menu-overlay" class="menu-overlay">
-                <div id="menu-container" class="menu-container">
-                    <div id="menu-mobile" class="menu-mobile">
-                        <a class="cabecalho-menu-link" href="index.html">Home</a>
-                        <a class="cabecalho-menu-link" href="./about.html">About me</a>
-                        <a class="cabecalho-menu-link"
-                            href="https://github.com/Michee27?tab=repositories&q=&type=public&language=&sort=">My
-                            projects</a>
-                        <a class="cabecalho-menu-link" href="./cv/CURRICULUM - MICHÉE CELESTIN.pdf">Download CV</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="apresentacao">
-            <div class="apresentacao-conteudo">
-                <h1 class="apresentacao-conteudo-titulo">Hello!! <br> I'm
-                    <strong class="titulo-destaque">
+        <section class="presentation">
+            <div class="presentation__container">
+                <h1 class="presentation__container__title">Hello!! <br> I'm
+                    <strong class="presentation__container__strong__title">
                         Michée Celestin
                     </strong>
                 </h1>
-                <p class="apresentacao-conteudo-texto">
+                <p class="presentation__container__description">
                     <strong>Software developer</strong> with back end skills in API development
                     with Node.js, JavaScript, database modeling in Postgres SQL and frontEnd skills in React, HTML and
                     CSS.
                     I help small businesses and designers put good ideas into practice. Let's talk?
                 </p>
 
-                <div class="aprensentacao-links">
-                    <h2 class="aprensentacao-links-subtitulo">Acesse minhas redes</h2>
-                    <a class="aprensentacao-links-navegacao" href="https://www.linkedin.com/in/micheecelestin/"
-                        onclick="animateButtonClick(this)">
+                <div class="presentation__container__links">
+                    <a class="presentation__container__links__navigation"
+                        href="https://www.linkedin.com/in/micheecelestin/" onclick="animateButtonClick(this)">
                         <img src="./assets/linkedin.png" alt="linkedin">
                         <span>Linkedin</span>
                     </a>
-                    <a class="aprensentacao-links-navegacao" href="https://github.com/Michee27"
+                    <a class="presentation__container__links__navigation" href="https://github.com/Michee27"
                         onclick="animateButtonClick(this)">
                         <img src="./assets/github.png" alt="github">
                         <span>GitHub</span>
                     </a>
+                    <a class="presentation__container__links__navigation" href="https://github.com/Michee27"
+                        onclick="animateButtonClick(this)">
+                        <img src="./assets/github.png" alt="github">
+                        <span>Instagram</span>
+                    </a>
+                    <a class="presentation__container__links__navigation" href="https://github.com/Michee27"
+                        onclick="animateButtonClick(this)">
+                        <img src="./assets/github.png" alt="github">
+                        <span>Facebook</span>
+                    </a>
                 </div>
 
             </div>
-            <img class="aprensetacao-imagem" src="./img/micheeDev.png">
+            <img class="presentation__container__image" src="./assets/micheeDev.png">
         </section>
 
-        <section class="conteudo">
+        <section class="about__mim" id="about-section">
+            <div class="presentation__container">
+                <h1 class="title" id="animated-text">About me</h1>
+                <p class="description__about__mim">
+                    My name is Michée, but many call me Mike, 27 years old, married,
+                    person with an easy smile. Software developer focused on Back End and Software Engineering academic,
+                    an enthusiast of
+                    technology embarking on an exciting
+                    career transition from control and automation engineering to software engineering. Christian and
+                    musician in his spare time.
+                    Foreign origin, I was born in Haiti and moved shortly after finishing high school to Brazil, where
+                    I completed all my higher studies.
+                </p>
+                <p class="description__about__mim">
+                    Passionate about transforming lines of code into innovative solutions. My journey in the world of
+                    technology
+                    revolves around the JavaScript ecosystem, Node.js, PosgresSQL, HTML, CSS and React.
+                    My constant pursuit of learning and improvement drives me to
+                    tackle complex challenges, always
+                    seeking elegant ways to solve problems.
+                    Welcome to my profile, where I share my love for code and my dedication to projects that enhance the
+                    digital experience.</p>
+            </div>
+
+        </section>
+
+        <section>
             <div class="skills">
-                <h1 class="titulo">
-                    Hard Skills
+                <h1 class="title">
+                    Skills
                 </h1>
-                <div class="conteudo-box">
-                    <p class="skills-titulo-link">JavaScript - Advanced Level</p>
-                    <p class="skills-titulo-link">Node.js - Advanced Level</p>
-                    <p class="skills-titulo-link">PosgresSQL - Advanced Level</p>
-                    <p class="skills-titulo-link">SQL - Advanced Level</p>
-                    <p class="skills-titulo-link">AWS - Advanced Level</p>
-                    <p class="skills-titulo-link">PHP - Intermediate Level</p>
+                <div class="skills__container__box">
+                    <div class="container__box">
+                        <img class="container__skill__image" src="./assets/node-js.png" alt="node">
+                        <p>node js</p>
+                    </div>
+                    <div class="container__box">
+                        <img class="container__skill__image" src="./assets/react.png" alt="node">
+                        <p>react</p>
+                    </div>
+                    <div class="container__box">
+                        <img class="container__skill__image" src="./assets/html.png" alt="node">
+                        <p>html</p>
+                    </div>
+                    <div class="container__box">
+                        <img class="container__skill__image" src="./assets/css.png" alt="node">
+                        <p>css</p>
+                    </div>
+                    <div class="container__box">
+                        <img class="container__skill__image" src="./assets/java.png" alt="node">
+                        <p>java</p>
+                    </div>
+                    <div class="container__box">
+                        <img class="container__skill__image" src="./assets/spring.png" alt="node">
+                        <p>spring boot</p>
+                    </div>
                 </div>
             </div>
 
             <div class="skills">
-                <h1 class="titulo">
-                    Soft Skills
+                <h1 class="title">
+                    Language
                 </h1>
-                <div class="conteudo-box">
-                    <p class="skills-titulo-link">Communication</p>
-                    <p class="skills-titulo-link">Project Management</p>
-                    <p class="skills-titulo-link">Creativity</p>
-                    <p class="skills-titulo-link">Team Work</p>
-                    <p class="skills-titulo-link">Scrum Kanban</p>
-                    <p class="skills-titulo-link">Agile Methodology</p>
-                </div>
-            </div>
+                <div class="skills__container__box">
+                    <div class="container__box">
+                        <img class="container__skill__image__language" src="./assets/language.png" alt="node">
+                        <p>French</p>
+                    </div>
+                    <div class="container__box">
+                        <img class="container__skill__image__language" src="./assets/language.png" alt="node">
+                        <p>Portuguese</p>
+                    </div>
+                    <div class="container__box">
+                        <img class="container__skill__image__language" src="./assets/language.png" alt="node">
+                        <p>English</p>
+                    </div>
 
-            <div class="skills">
-                <h1 class="titulo">
-                    Languages
-                </h1>
-                <div class="conteudo-box">
-                    <p class="skills-titulo-link">English - Advanced Level</p>
-                    <p class="skills-titulo-link">French - Native Level</p>
-                    <p class="skills-titulo-link">Portugues - Fluente level</p>
                 </div>
             </div>
         </section>
 
-        <section class="conteudo">
-            <h1 class="titulo">
+        <section class="academic__education">
+            <h1 class="title">
+                Academic Education
+            </h1>
+
+            <div class="academic__education__container">
+                <div class="academic__education__container__box">
+                    <img class="academic__education__container__box__imagem" src="./assets/ufsc.png" alt="node">
+                    <div>
+                        <h2 class="academic__education__container__box__subtitle">Control and Automation Engineering
+                        </h2>
+                        <p>2018 - In progress</p>
+                    </div>
+                </div>
+
+                <div class="academic__education__container__box">
+                    <img class="academic__education__container__box__imagem" src="./assets/cubos_academy.png"
+                        alt="node">
+                    <h2 class="academic__education__container__box__subtitle">Software developer - Back-end</h2>
+                    <p>2022 - 2023</p>
+                </div>
+
+                <div class="academic__education__container__box">
+                    <img class="academic__education__container__box__imagem" src="./assets/Alura.png" alt="node">
+                    <h2 class="academic__education__container__box__subtitle">Software developer - Front-end</h2>
+                    <p>2024 - -In progress</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h1 class="title">
                 My projects
             </h1>
-            <div class="conteudo-principal">
-                <div class="conteudo-box-projeto">
-                    <div class="project-details">
-                        <img class="project-image" src="./img/MIC-Bank.png" alt="">
-                        <div class="project-details-description">
-                            <h2 class="project-title">MICEL Bank</h2>
-                            <p>RESTful API aims to offer users a secure, easy-to-use and dynamic environment,
-                                controlling their finances from creating the bank to issuing activity statements.</p>
+            <div class="container__main">
 
-                            <div class="project-access">
-                                <a class="project-link" href="https://github.com/Michee27/MICEL-BANK">
-                                    <img src="./assets/github.png" alt="GitHub">Source code</a>
-                            </div>
+                <div class="project__details">
+                    <img class="project__image" src="./assets/banco.jpeg" alt="">
 
+                    <div class="project__details__description">
+                        <h2 class="project__title">MICEL-BANK</h2>
+                        <p>RESTful API aims to offer users a secure, easy-to-use and dynamic environment,
+                            controlling their finances from creating the bank to issuing activity statements.
+                        </p>
+
+                        <div class="project__access">
+                            <a class="project__access__code" href="https://github.com/Michee27/MICEL-BANK">Source
+                                code</a>
+                            <a class="project__access__demo" href="https://github.com/Michee27/MICEL-BANK">Demo</a>
                         </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="project__details">
+                    <img class="project__image" src="./assets/PDV.jpg" alt="">
+
+                    <div class="project__details__description">
+                        <h2 class="project__title">PDV</h2>
+                        <p>API that simulates a store's cash register. Allowing you to record sales, accept
+                            different forms of payment, issue receipts and manage stocks.</p>
+
+                        <div class="project__access">
+                            <a class="project__access__code" href="https://github.com/Michee27/MICEL-BANK">Source
+                                code</a>
+                            <a class="project__access__demo" href="https://github.com/Michee27/MICEL-BANK">Demo</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="project__details">
+                    <img class="project__image" src="./assets/criptografar.jpg" alt="">
+
+                    <div class="project__details__description">
+                        <h2 class="project__title">Text Encryptor</h2>
+                        <p>Text Encryptor API, whose main objective is to encrypt and decrypt texts. Very simple and
+                            easy to use, developed in JavaScript</p>
+                        <div class="project__access">
+                            <a class="project__access__code" href="https://github.com/Michee27/MICEL-BANK">Source
+                                code</a>
+                            <a class="project__access__demo" href="https://github.com/Michee27/MICEL-BANK">Demo</a>
+                        </div>
+
                     </div>
                 </div>
 
-                <div class="conteudo-box-projeto">
-                    <div class="project-details">
-                        <img class="project-image" src="./img/PDV.jpg" alt="">
-                        <div class="project-details-description">
-                            <h2 class="project-title">PDV</h2>
-                            <p>API that simulates a store's cash register. Allowing you to record sales, accept
-                                different forms of payment, issue receipts and manage stocks.</p>
+            </div>
+        </section>
 
-                            <div class="project-access">
-                                <a class="project-link" href="https://github.com/Michee27/PDV-Frente-De-Caixa">
-                                    <img src="./assets/github.png" alt="GitHub">Source code</a>
-                            </div>
+        <section class="academic__education">
+            <h1 class="title">
+                Academic Education
+            </h1>
 
-                        </div>
+            <div class="academic__education__container">
+                <div class="academic__education__container__box">
+                    <img class="academic__education__container__box__imagem" src="./assets/westrock.png" alt="node">
+                    <div>
+                        <h2 class="academic__education__container__box__subtitle">Control and Automation Engineering
+                        </h2>
+                        <p>2018 - In progress</p>
                     </div>
                 </div>
 
-                <div class="conteudo-box-projeto">
-                    <div class="project-details">
-                        <img class="project-image" src="./img/encrr.jpg" alt="">
-                        <div class="project-details-description">
-                            <h2 class="project-title">Text Encryptor</h2>
-                            <p>Text Encryptor API, whose main objective is to encrypt and decrypt texts. Very simple and
-                                easy to use, developed in JavaScript</p>
-                            <div class="project-access">
-                                <a class="project-link" href="https://github.com/Michee27/encriptador">
-                                    <img src="./assets/github.png" alt="GitHub">Source code</a>
-                            </div>
+                <div class="academic__education__container__box">
+                    <img class="academic__education__container__box__imagem" src="./assets/schneider.png" alt="node">
+                    <h2 class="academic__education__container__box__subtitle">Software developer - Back-end</h2>
+                    <p>2022 - 2023</p>
+                </div>
 
-                        </div>
-                    </div>
+                <div class="academic__education__container__box">
+                    <img class="academic__education__container__box__imagem" src="./assets/altimus.png" alt="node">
+                    <h2 class="academic__education__container__box__subtitle">Software developer - Front-end</h2>
+                    <p>2024 - -In progress</p>
                 </div>
             </div>
         </section>
-        <div class="imagem-whatsapp">
-            <a href="https://wa.me/5547997768422"><img src="./img/whats.png" alt="Imagem Whatsapp"></a>
-        </div>
+
+        <section class="whatsapp__image">
+            <a href="https://wa.me/5547997768422"><img src="./assets/whats.png" alt="Imagem Whatsapp"></a>
+        </section>
+
+        <section class="cv_item">
+            <a class="cv__button" href="./cv/CURRICULUM - MICHÉE CELESTIN.pdf">Download CV</a>
+        </section>
     </main>
 
-    <footer class="rodape">
+    <footer class="footer">
         <p>Developed by Michée Celestin</p>
     </footer>
 
