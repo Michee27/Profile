@@ -573,6 +573,7 @@ body {
     .academic__education__container__box {
         flex-basis: calc(100% - 20px);
         /* Alterar para 100% da largura com espaço entre os elementos */
+        align-items: center;
     }
 
     .project__details__description {
